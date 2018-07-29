@@ -3,10 +3,11 @@ sudo apt-get update
 sudo apt-get -y upgrade
 cat ~/Minecraft1.12.2/text/raspi-config
 sleep 10s
-raspi-config
+sudo raspi-config
 sudo apt-get -y install libalut0 libalut-dev && sudo apt-get -y install mesa-utils
 cat ~/Minecraft1.12.2/text/fps
 sleep 10s
+glxgears
 mkdir ~/Minecraft; mkdir ~/Minecraft/Natives; cd ~/Minecraft && wget https://s3.amazonaws.com/Minecraft.Download/launcher/Minecraft.jar
 cat ~/Minecraft1.12.2/text/launcher
 sleep 10s
